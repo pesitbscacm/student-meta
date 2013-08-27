@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/usn_linear_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/college"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="1PE"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/year"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/college"
+            android:inputType="number" />
+
+        <Spinner
+            android:id="@+id/dept"
+            android:layout_width="100dp"
+            style="@android:style/Widget.Spinner.DropDown"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/year"
+            android:entries="@array/departments" />
+
+        <EditText
+            android:id="@+id/roll"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/dept"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/go"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/roll"
+            android:text="Go" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usn_linear_layout"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/usn_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_text"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/credits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="designed by Radhika Bhanu and Karan Rajpal   "
+        android:textSize="10dp"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/name"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="180dp"
+        android:src="@drawable/pesitlogo"
+        android:visibility="gone" />
+
+</RelativeLayout>

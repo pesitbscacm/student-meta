@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/navbar"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="38dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitStart"
+            android:src="@drawable/pes" />
+
+        <!--
+             <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_toLeftOf="@+id/line1"
+            android:layout_toRightOf="@+id/logo"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="PESITBSC"
+            android:textSize="17dp"
+            android:textColor="#ffffff" />
+        -->
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_toLeftOf="@+id/line1"
+            android:layout_toRightOf="@+id/logo"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="PESITBSC"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/sem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="3dp"
+            android:layout_toLeftOf="@+id/line1"
+            android:layout_toRightOf="@+id/logo"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="14dp" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@+id/line2"
+            android:background="#000000" />
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@+id/ibtn_refresh"
+            android:background="#999999" />
+
+        <ImageButton
+            android:id="@+id/ibtn_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@+id/ibtn_edit"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:padding="8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/refresh" />
+
+        <View
+            android:id="@+id/line3"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@+id/line4"
+            android:background="#000000" />
+
+        <View
+            android:id="@+id/line4"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@+id/ibtn_edit"
+            android:background="#999999" />
+
+        <ImageButton
+            android:id="@+id/ibtn_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:padding="8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/edit" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <android.support.v4.view.PagerTabStrip
+            android:id="@+id/pager_tab_strip"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="top"
+            android:background="#dadada"
+            android:paddingBottom="2dp"
+            android:paddingTop="1dp"
+            android:textColor="#000000" />
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

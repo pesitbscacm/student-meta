@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="fill_parent" >
+    </ListView>
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_centerInParent="true"
+         />
+
+    <!--
+        <TextView
+            android:id="@+id/subj1_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:text="Subject"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/subject_1_marks_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/subj1_heading"
+            android:text="Marks"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/divider0"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/subject_1_marks_heading"
+            android:background="#aaaaaa" />
+
+        <TextView
+            android:id="@+id/subj1_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider0"
+            android:layout_margin="20dp"
+            android:text="Se:   "
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/subject_1_marks_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider0"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/subj1_text"
+            android:text="24"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/subject_1_marks_text"
+            android:background="#aaaaaa" />
+
+        <TextView
+            android:id="@+id/subj2_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider1"
+            android:layout_margin="20dp"
+            android:text="Ss:   "
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/subject_2_marks_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider1"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/subj2_text"
+            android:text="20 "
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/subject_2_marks_text"
+            android:background="#aaaaaa" />
+
+        <TextView
+            android:id="@+id/subj3_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider2"
+            android:layout_margin="20dp"
+            android:text="Os:   "
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/subject_3_marks_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider2"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/subj3_text"
+            android:text="23 "
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/subject_3_marks_text"
+            android:background="#aaaaaa" />
+
+        <TextView
+            android:id="@+id/subj4_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider3"
+            android:layout_margin="20dp"
+            android:text="Dbms: "
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/subject_4_marks_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider3"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/subj1_text"
+            android:text="21 "
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/subject_4_marks_text"
+            android:background="#aaaaaa" />
+
+        <TextView
+            android:id="@+id/subj5_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider4"
+            android:layout_margin="20dp"
+            android:text="Cn:   "
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/subject_5_marks_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider4"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/subj5_text"
+            android:text="18 "
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/subject_5_marks_text"
+            android:background="#aaaaaa" />
+
+        <TextView
+            android:id="@+id/subj6_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider5"
+            android:layout_margin="20dp"
+            android:text="Flat: "
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/subject_6_marks_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider5"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/subj6_text"
+            android:text="19 "
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/subject_6_marks_text"
+            android:background="#aaaaaa" />
+    -->
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<array name="departments">
+    <item>"CS"</item>
+	<item>"IS"</item>
+    <item>"EC"</item>
+    <item>"MECH"</item>
+</array>    
+</resources>

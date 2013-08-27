@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppTheme"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="center"
+        android:src="@drawable/calendar" />
+
+</ScrollView>
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent" >
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+
+            <com.white.pesit.TouchImageView
+                android:id="@+id/calendarid"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:scaleType="center"
+                android:src="@drawable/calendar" >
+            </com.white.pesit.TouchImageView>
+        </HorizontalScrollView>
+    </ScrollView>
+
+</LinearLayout>

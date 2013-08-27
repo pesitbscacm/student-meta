@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/calendarid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:adjustViewBounds="false"
+        android:scaleType="fitXY"
+        android:src="@drawable/calendar_small"
+        android:tint="#55efefef" />
+
+</LinearLayout><!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent" >
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+
+            <com.white.pesit.TouchImageView
+                android:id="@+id/calendarid"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:scaleType="center"
+                android:src="@drawable/pics" >
+            </com.white.pesit.TouchImageView>
+        </HorizontalScrollView>
+    </ScrollView>
+
+</LinearLayout>
+-->
